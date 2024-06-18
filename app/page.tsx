@@ -1,9 +1,10 @@
 import Image from "next/image";
+import LayoutGridDemo from "./components/LayoutGrid";
 
 export default function Home() {
   return (
     <div>
-      <div className="carousel w-full h-72 ">
+      <div className="carousel w-full h-80 ">
         <div id="slide1" className="carousel-item relative w-full ">
           <Image
             alt=""
@@ -58,8 +59,8 @@ export default function Home() {
         <div id="slide4" className="carousel-item relative w-full">
           <Image
             alt=""
-            width={1000}
-            height={1000}
+            width={2000}
+            height={2000}
             src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
             className="w-full"
           />
@@ -72,6 +73,9 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </div>
+      <div className="">
+        <LayoutGridDemo />
       </div>
     </div>
   );
